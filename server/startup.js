@@ -1,7 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
-  
   //Validate/create admin user -> DEV
   //Meteor.users.remove({});
   if(!Meteor.users.findOne({"username": "admin", "roles": "admin"})){

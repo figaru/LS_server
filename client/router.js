@@ -41,7 +41,7 @@ Router.route('/fleet', {
     name: "fleet",
     waitOn: function(){
         var subs = [
-            //Meteor.subscribe("")
+            Meteor.subscribe("fleet-token-add")
         ];
         
         return;
