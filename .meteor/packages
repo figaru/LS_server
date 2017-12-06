@@ -27,3 +27,5 @@ accounts-ui
 iron:router
 
 session
+
+check

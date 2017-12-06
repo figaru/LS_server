@@ -37,6 +37,20 @@ Router.route('/', {
     }
 });
 
+Router.route('/fleet', {
+    name: "fleet",
+    waitOn: function(){
+        var subs = [
+            //Meteor.subscribe("")
+        ];
+        
+        return;
+    },
+    action: function(){
+        this.render('fleet');
+    }
+});
+
 /* Router.route('/', {
     name: "locationMapping",
     waitOn: function(){
